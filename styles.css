@@ -304,7 +304,7 @@ svg.lucide, i[data-lucide] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 76px;
+    height: 82px;
     gap: 1rem;
 }
 
@@ -316,11 +316,17 @@ svg.lucide, i[data-lucide] {
 }
 
 .logo-img {
-    height: 42px;
+    height: 56px;
+    max-height: 56px;
     width: auto;
     object-fit: contain;
     border-radius: 8px;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover .logo-img {
+    transform: scale(1.05);
 }
 
 .nav-menu {
@@ -1976,7 +1982,9 @@ svg.lucide, i[data-lucide] {
     }
 
     .logo-img {
-        height: 34px;
+        height: 48px;
+        max-height: 48px;
+        max-width: 220px;
     }
 
     .header-actions {
@@ -2116,13 +2124,14 @@ svg.lucide, i[data-lucide] {
     }
 
     .header-container {
-        height: 66px;
+        height: 74px;
         padding: 0 1rem;
     }
 
     .logo-img {
-        height: 32px;
-        max-width: 160px;
+        height: 46px;
+        max-height: 46px;
+        max-width: 200px;
     }
 
     .nav-menu.active {
