@@ -12,9 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerLogo = document.getElementById('header-logo');
     const footerLogo = document.getElementById('footer-logo');
 
-    const pathPrefix = (window.location.pathname.includes('/about-us') || window.location.pathname.endsWith('/about-us/')) ? '../' : '';
-    const logoLightPath = pathPrefix + 'assets/logos/logo-light.png';
-    const logoDarkPath = pathPrefix + 'assets/logos/logo-dark.png';
+    const logoLightPath = 'assets/logos/logo-light.png';
+    const logoDarkPath = 'assets/logos/logo-dark.png';
 
     // Saved Theme or Default to Dark
     const savedTheme = localStorage.getItem('bmi_theme') || 'dark';
