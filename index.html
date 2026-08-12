@@ -49,7 +49,7 @@
 
             <!-- Brand Logo -->
             <a href="#" class="brand-logo" id="brand-logo-link">
-                <img src="assets/logos/logo-dark.png" onerror="this.onerror=null; this.src='assets/logos/logo-dark.jpg';" alt="Bhaylu Media India Logo" id="header-logo" class="logo-img">
+                <img src="assets/logos/logo-dark.png" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='logo-dark.png';}else if(this.dataset.retry=='1'){this.dataset.retry=2;this.src='assets/logos/logo-dark.jpg';}else{this.src='logo-dark.jpg';}" alt="Bhaylu Media India Logo" id="header-logo" class="logo-img">
             </a>
 
             <!-- Navigation Links -->
